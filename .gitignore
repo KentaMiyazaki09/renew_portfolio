@@ -1,0 +1,5 @@
+# 以下のファイル・ディレクトリはgitで無視する
+/node_modules
+.DS_Store
+.vscode
+.next
