@@ -1,0 +1,8 @@
+.layout a {
+  color: #000;
+  text-decoration: none;
+}
+
+.layout li {
+  list-style: none;
+}

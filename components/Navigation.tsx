@@ -3,28 +3,32 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
+import styles from './Navigation.module.css'
+
 export default function Navigation() {
   const pathname = usePathname()
 
   const links = [
     { href: '/', label: 'Home' },
-    { href: '/about', lable: 'About' },
     { href: '/works', label: 'Works' },
     { href: '/skill', label: 'Skill' },
   ]
 
   return (
-    <nav>
+    <nav className={styles.nav}>
       {links.map(link => (
+      <li
+        key={link.href}
+        className={`${
+          pathname === link.href ? styles.active : ''
+        }`}
+      >
         <Link
-          key={link.href}
           href={link.href}
-          className={`${
-            pathname === link.href ? 'font-bold underline' : ''
-          } hover: opacity-70`}
         >
         {link.label}
         </Link>
+      </li>
       ))}
     </nav>
   )
