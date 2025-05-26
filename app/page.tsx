@@ -12,7 +12,7 @@ export default function Page() {
       transition={{ duration: 0.5 }}
     >
       <main>
-        <h1>Hello, Next.js!</h1>
+        <h1>K.MIYAZAKI<br />PORTFOLIO</h1>
       </main>
     </motion.div>
   )

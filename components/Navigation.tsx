@@ -16,20 +16,22 @@ export default function Navigation() {
 
   return (
     <nav className={styles.nav}>
-      {links.map(link => (
-      <li
-        key={link.href}
-        className={`${
-          pathname === link.href ? styles.active : ''
-        }`}
-      >
-        <Link
-          href={link.href}
+      <ul>
+        {links.map(link => (
+        <li
+          key={link.href}
+          className={`${
+            pathname === link.href ? styles.active : ''
+          }`}
         >
-        {link.label}
-        </Link>
-      </li>
-      ))}
+          <Link
+            href={link.href}
+          >
+          {link.label}
+          </Link>
+        </li>
+        ))}
+      </ul>
     </nav>
   )
 }

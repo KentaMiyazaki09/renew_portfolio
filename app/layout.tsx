@@ -3,7 +3,8 @@ import Navigation from '../components/Navigation'
 
 import { AnimatePresence } from 'motion/react'
 
-import style from './layout.module.css'
+import './global.css'
+import Logo from '../components/Logo'
 
 export default function RootLayout({
   children,
@@ -12,7 +13,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={style.layout}>
+      <body>
+        <Logo />
         <Navigation />
         <AnimatePresence mode="wait">
           {children}
