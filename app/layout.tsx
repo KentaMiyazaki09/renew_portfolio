@@ -3,7 +3,7 @@ import Navigation from '../components/Navigation'
 
 import { AnimatePresence } from 'motion/react'
 
-import './global.css'
+import './global.scss'
 import Logo from '../components/Logo'
 
 export default function RootLayout({

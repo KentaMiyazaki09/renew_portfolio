@@ -1,6 +1,9 @@
 'use client'
 
 import { motion } from 'motion/react'
+import PageTitle from '../../components/PageTitle'
+
+import styles from './skill.module.scss'
 
 export default function SkillPage() {
   return (
@@ -11,8 +14,8 @@ export default function SkillPage() {
       exit={{ opacity: 0, translateY: 10 }}
       transition={{ duration: 0.5 }}
     >
-      <main>
-        <h1>Skill</h1>
+      <main className={styles.skill}>
+        <PageTitle text='Skill' />
         <ul>
           <li>HTML, CSS</li>
           <li>Wordpress</li>

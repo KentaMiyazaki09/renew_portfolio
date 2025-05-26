@@ -1,9 +1,10 @@
 'use client'
 
 import Link from "next/link"
+
 import { usePathname } from "next/navigation"
 
-import styles from './Navigation.module.css'
+import styles from './Navigation.module.scss'
 
 export default function Navigation() {
   const pathname = usePathname()

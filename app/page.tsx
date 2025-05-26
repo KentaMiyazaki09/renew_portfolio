@@ -2,6 +2,8 @@
 
 import { motion } from 'motion/react'
 
+import styles from './home.module.scss'
+
 export default function Page() {
   return (
     <motion.div
@@ -11,7 +13,7 @@ export default function Page() {
       exit={{ opacity: 0, translateY: 10 }}
       transition={{ duration: 0.5 }}
     >
-      <main>
+      <main className={styles.home}>
         <h1>K.MIYAZAKI<br />PORTFOLIO</h1>
       </main>
     </motion.div>

@@ -1,6 +1,9 @@
 'use client'
 
 import { motion } from 'motion/react'
+import PageTitle from '../../components/PageTitle'
+
+import styles from './works.module.scss'
 
 export default function WorksPage() {
   return (
@@ -11,8 +14,8 @@ export default function WorksPage() {
       exit={{ opacity: 0, translateY: 10 }}
       transition={{ duration: 0.5 }}
     >
-      <main>
-        <h1>Works</h1>
+      <main className={styles.works}>
+        <PageTitle text="Works" />
         <ul>
           <li>hoge</li>
           <li>fuga</li>
