@@ -4,6 +4,8 @@ import Link from "next/link"
 
 import { usePathname } from "next/navigation"
 
+import { motion } from 'motion/react'
+
 import styles from './Navigation.module.scss'
 
 export default function Navigation() {
@@ -29,6 +31,13 @@ export default function Navigation() {
             href={link.href}
           >
           {link.label}
+           {pathname === link.href ? (
+            <motion.div
+              className={styles.underline}
+              layoutId="underline"
+              id="underline"
+            />
+            ) : null}
           </Link>
         </li>
         ))}

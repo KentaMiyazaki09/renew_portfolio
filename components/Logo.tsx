@@ -11,16 +11,19 @@ export default function Logo() {
   if (pathname === '/') return null
 
   return (
-    <motion.div
-      key="home"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className={styles.logo}>
+    <div className={styles.logo}>
+      <motion.div
+        key="home"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0 }}
+        transition={{
+          duration: 0.5,
+          scale: { type: "spring", visualDuration: 0.4, bounce: 0.4 },
+        }}
+      >
         <p>K.MIYAZAKI</p>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 }

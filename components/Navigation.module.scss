@@ -1,30 +1,29 @@
 .nav {
   position: fixed;
-  top: 20%;
-  right: 10px;
+  top: 20vw;
+  right: 20px;
+
+  > li {
+    position: relative;
+  }
 
   a {
-    font-size: 13px;
+    font-size: 15px;
     display: block;
     position: relative;
     padding-left: 5px;
-    &::before {
-      content: "";
-      width: 2px;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #000;
-
-      transition: opacity 0.5s ease;
-      opacity: 0;
-    }
   }
 }
 
 .active{
-  a::before {
-    opacity: 1;
-  }
+}
+
+.underline {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: #4dfcca;
 }
