@@ -13,8 +13,9 @@ export default function SkillPage() {
       animate={{ opacity: 1, translateY: 0 }}
       exit={{ opacity: 0, translateY: 10 }}
       transition={{ duration: 0.5 }}
+      className={styles.skill}
     >
-      <main className={styles.skill}>
+      <main>
         <PageTitle text='Skill' />
         <ul>
           <li>HTML, CSS</li>

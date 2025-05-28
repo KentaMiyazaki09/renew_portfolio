@@ -13,8 +13,9 @@ export default function WorksPage() {
       animate={{ opacity: 1, translateY: 0 }}
       exit={{ opacity: 0, translateY: 10 }}
       transition={{ duration: 0.5 }}
+      className={styles.works}
     >
-      <main className={styles.works}>
+      <main>
         <PageTitle text="Works" />
         <ul>
           <li>hoge</li>
