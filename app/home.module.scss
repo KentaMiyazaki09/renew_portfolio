@@ -1,8 +1,10 @@
+@use './components/_mixin' as m;
+
 .home {
   position: fixed;
   top: 30%;
   left: 20px;
   h1 {
-    font-size: 30px;
+    @include m.fz_vw(30);
   }
 }

@@ -1,7 +1,10 @@
+@use './components/_mixin' as m;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: inherit;
 }
 
 html, body {
@@ -9,7 +12,7 @@ html, body {
   font-family: sans-serif;
   background: #fff;
   color: #000;
-  font-size: 12px;
+  @include m.fz_vw(12);
 }
 
 a {

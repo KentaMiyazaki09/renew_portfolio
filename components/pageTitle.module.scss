@@ -1,0 +1,5 @@
+@use './mixin' as m;
+
+.pageTitle {
+  @include m.fz_vw(20);
+}

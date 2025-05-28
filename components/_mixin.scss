@@ -1,0 +1,22 @@
+@mixin pc() {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+@mixin sp() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+/*
+ * フォントサイズをvwで計算
+ * sp 横幅375pxで$fontSizeになるように計算
+ * pc 横幅1100pxで$fontSizeになるように計算
+ */
+@mixin fz_vw($fontSize) {
+  font-size: #{calc($fontSize / 375) * 100}vw;
+  @media screen and (min-width: 769px) {
+    font-size: #{calc($fontSize / 900) * 100}vw;
+  }
+}
