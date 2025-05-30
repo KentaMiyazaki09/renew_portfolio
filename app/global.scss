@@ -11,13 +11,13 @@
   font: inherit;
 }
 
-html, body {
+body {
   height: 100%;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  background: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   @include m.fz_vw(12);
 }
 
