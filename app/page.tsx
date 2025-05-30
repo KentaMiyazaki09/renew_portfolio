@@ -15,7 +15,7 @@ export default function Page() {
       className={styles.home}
     >
       <main>
-        <h1>K.MIYAZAKI<br />PORTFOLIO</h1>
+        <h1>K.MIYAZAKI</h1>
       </main>
     </motion.div>
   )
