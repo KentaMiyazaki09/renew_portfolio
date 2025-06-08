@@ -1,5 +1,9 @@
 @use './components/_mixin' as m;
 
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Inter&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +11,18 @@
   font: inherit;
 }
 
-html, body {
+body {
   height: 100%;
-  font-family: sans-serif;
   background: #d0d0d0;
   color: #000;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
   @include m.fz_vw(12);
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
 }
 
 a {
