@@ -5,6 +5,7 @@
   top: 30%;
   left: 20px;
   h1 {
-    @include m.fz_vw(30);
+    font-weight: 700;
+    @include m.fz_vw(32);
   }
 }

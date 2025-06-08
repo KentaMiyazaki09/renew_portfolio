@@ -1,5 +1,6 @@
 @use './mixin' as m;
 
 .pageTitle {
-  @include m.fz_vw(20);
+  font-weight: 700;
+  @include m.fz_vw(32);
 }
