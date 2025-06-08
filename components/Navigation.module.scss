@@ -1,6 +1,7 @@
 @use './mixin' as m;
 
 .nav {
+  z-index: 999;
   position: fixed;
   top: 20%;
   right: 20px;
