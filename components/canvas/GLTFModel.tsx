@@ -16,6 +16,11 @@ const Model: React.FC<ModalProps> = ({ url }) => {
     loader.load(
       url,
       (gltf) => {
+        gltf.scene.traverse(child => {
+          if ((child as THREE.Mesh).isMesh) {
+            child.castShadow = true
+          }
+        })
         setModel(gltf.scene)
       },
       undefined,
@@ -28,7 +33,7 @@ const Model: React.FC<ModalProps> = ({ url }) => {
   if (!model) return null
 
   return (
-    <group position={[0, -1, 0]} rotation={[Math.PI / 5.0, -0.8, 0]}>
+    <group position={[0, 0.7, 0]} rotation={[Math.PI / 5.0, -0.8, 0]}>
       <primitive object={model} />
     </group>
   )

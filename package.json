@@ -13,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@react-three/drei": "^10.1.2",
     "@react-three/fiber": "^9.1.2",
     "motion": "^12.14.0",
     "next": "^15.3.2",

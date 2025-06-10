@@ -1,6 +1,6 @@
 'use client'
 
-import TextScene from './TextScene'
+import TextScene from '../TextScene'
 
 import { usePathname } from "next/navigation"
 

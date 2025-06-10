@@ -12,12 +12,12 @@ export  default function TextScene({ text }: { text: string }) {
 
   const geometry = new TextGeometry(text, {
     font,
-    size: 0.5,
+    size: 0.3,
     depth: 0.1,
   })
 
   return (
-    <mesh ref={meshRef} geometry={geometry} position={[0, 0, 0]}>
+    <mesh castShadow ref={meshRef} geometry={geometry} position={[1, 0.1, 0]}>
       <meshStandardMaterial color="White" />
     </mesh>
   )
