@@ -1,7 +1,6 @@
 'use client'
 
-import React, { Suspense, useEffect, useState } from 'react'
-import { Canvas } from '@react-three/fiber'
+import React, { useEffect, useState } from 'react'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
@@ -35,15 +34,4 @@ const Model: React.FC<ModalProps> = ({ url }) => {
   )
 }
 
-const Scene: React.FC = () => {
-  return (
-    <Canvas camera={{ position: [0, 0, 4] }}>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 5, 3]} intensity={2.5} />
-      <Suspense fallback={null}>
-        <Model url="/glb/01_fired_egg.glb" />
-      </Suspense>
-    </Canvas>
-  )
-}
-export default Scene
+export default Model

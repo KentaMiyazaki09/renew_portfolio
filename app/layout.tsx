@@ -6,7 +6,7 @@ import { AnimatePresence } from 'motion/react'
 import './global.scss'
 import Logo from '../components/Logo'
 
-import GLTFModel from '../components/GLTFModel'
+import CanvasWrapper from '../components/CanvasWrapper'
 
 export default function RootLayout({
   children,
@@ -18,7 +18,7 @@ export default function RootLayout({
       <body>
         <Logo />
         <Navigation />
-        <GLTFModel />
+        <CanvasWrapper />
         <AnimatePresence mode="wait">
           {children}
         </AnimatePresence>
